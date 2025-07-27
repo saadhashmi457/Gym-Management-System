@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cardio Training - UmmahFit</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body style="font-family: 'Poppins', sans-serif;">
+
+<section class="py-5" style="background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);">
+  <div class="container bg-white rounded-4 shadow-lg p-5">
+    
+    <!-- Header -->
+    <div class="text-center mb-5">
+      <h1 class="fw-bold text-danger display-5">Cardio Training</h1>
+      <p class="fs-5 text-muted">
+        Build stamina, burn fat, and strengthen your heart with <strong>UmmahFit</strong>'s Islamic-based Cardio Training program.
+        Designed to energize your life while aligning with your values.
+      </p>
+    </div>
+
+    <!-- Image Section -->
+    <div class="mb-5">
+      <img src="{% static 'Gymsystem/images/cardioservice.webp' %}" alt="Cardio Training" class="img-fluid rounded-4 w-100 shadow">
+    </div>
+
+    <!-- Why Cardio Section -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <h2 class="text-danger fw-semibold mb-4">Why Cardio is Essential</h2>
+        <ul class="fs-5 text-muted">
+          <li>Boosts heart health and improves lung capacity</li>
+          <li>Burns calories and promotes fat loss</li>
+          <li>Enhances energy, sleep, and stress levels</li>
+          <li>Halal routines with no music or mixed environments</li>
+          <li>Custom low-impact & high-intensity options</li>
+        </ul>
+      </div>
+     
+
+    {% comment %} <!-- Faith and Fitness Section -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6 order-md-2">
+        <h2 class="text-warning fw-semibold mb-4">Faith and Fitness Combined</h2>
+        <p class="fs-5 text-muted">
+          At UmmahFit, your cardio journey respects modesty, privacy, and Islamic values.
+          All sessions are music-free and gender-specific, guided by our certified trainers with Islamic understanding.
+        </p>
+      </div> {% endcomment %}
+
+    <!-- Trainer Section -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <h2 class="text-warning fw-semibold mb-4 fs-1">Led by Cardio Experts</h2>
+        <p class="fs-5 text-muted">
+          Our trainers design heart-healthy routines tailored to your fitness level — from walking-based plans to interval training.
+          You’ll feel the burn without compromising your beliefs.
+        </p>
+      </div>
+       <div class="col-md-6">
+        <img src="{% static 'Gymsystem/images/cardioservice2.avif' %}" alt="Cardio Expert" class="img-fluid rounded-4 shadow">
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="mb-5">
+      <h3 class="fw-bold text-success mb-4">What Members Say</h3>
+      <div class="bg-light p-4 rounded-4 shadow">
+        <p class="fs-5 fst-italic text-muted">
+          "The cardio sessions at UmmahFit helped me lose 10kg in 3 months — all while maintaining my Islamic lifestyle!"
+        </p>
+        <p class="fw-bold text-end text-dark">— Fatima R., Age 34</p>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center mt-4">
+      <a href="{% url 'register' %}" class="btn btn-danger btn-lg px-5 py-3 shadow">Join Cardio Program</a>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

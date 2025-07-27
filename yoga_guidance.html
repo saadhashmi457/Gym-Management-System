@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yoga Guidance - UmmahFit</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body style="font-family: 'Poppins', sans-serif;">
+
+<section class="py-5" style="background: linear-gradient(135deg, #39042df8 0%, #040824ff 100%);">
+  <div class="container bg-white rounded-4 shadow-lg p-5">
+    
+    <!-- Header -->
+    <div class="text-center mb-5">
+      <h1 class="fw-bold text-danger display-5">Yoga Guidance</h1>
+      <p class="fs-5 text-muted">
+        Embrace peace, flexibility, and mindful fitness with <strong>UmmahFit</strong>'s Islamic Yoga Guidance program.
+        Designed for body-soul harmony — fully aligned with Islamic values and modesty.
+      </p>
+    </div>
+
+    <!-- Image Section -->
+    <div class="mb-5">
+      <img src="{% static 'Gymsystem/images/yogaservice.webp' %}" alt="Yoga Session" class="img-fluid rounded-4 w-100 shadow">
+    </div>
+
+    <!-- Why Yoga Section -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <h2 class="text-danger fw-semibold mb-4">Why Yoga is Powerful</h2>
+        <ul class="fs-5 text-muted">
+          <li>Improves flexibility, posture, and balance</li>
+          <li>Reduces anxiety, stress, and emotional tension</li>
+          <li>Boosts immunity and deepens breath control</li>
+          <li>Spiritual tranquility without any non-Islamic practices</li>
+          <li>Separate sessions for sisters and brothers</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Trainer Section -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <h2 class="text-warning fw-semibold mb-4 fs-1">Guided by Certified Yoga Experts</h2>
+        <p class="fs-5 text-muted">
+          Our instructors are certified in halal, spiritually mindful yoga — no chanting, no music. Just pure breathing, balance, and barakah.
+          Sessions are gentle, guided, and spiritually uplifting.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <img src="{% static 'Gymsystem/images/yogaservice2.webp' %}" alt="Yoga Trainer" class="img-fluid rounded-4 shadow">
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="mb-5">
+      <h3 class="fw-bold text-success mb-4">What Our Members Say</h3>
+      <div class="bg-light p-4 rounded-4 shadow">
+        <p class="fs-5 fst-italic text-muted">
+          "After joining UmmahFit's yoga program, I found peace in my mind and strength in my body — all within the boundaries of my faith."
+        </p>
+        <p class="fw-bold text-end text-dark">— Aisha K., Age 29</p>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center mt-4">
+      <a href="{% url 'register' %}" class="btn btn-danger btn-lg px-5 py-3 shadow">Join Yoga Program</a>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

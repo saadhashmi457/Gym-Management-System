@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Gym Management System{% endblock %}</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Weight Loss Service Page -->
+<section class="py-5" style="background: linear-gradient(135deg, #44021fff 0%, #07202aff 100%);">
+  <div class="container">
+
+    <!-- Header Section -->
+    <div class="text-center mb-5">
+      <h1 class="display-5 fw-bold text-warning">Weight Loss Program</h1>
+      <p class="fs-5 text-light">Achieve sustainable weight loss through a faith-driven fitness and diet journey.</p>
+      <hr class="w-25 mx-auto" style="border: 2px solid #beb6b7ff;">
+    </div>
+
+    <!-- Hero Row -->
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-12 mb-4 mb-lg-0">
+        <img src="{% static 'Gymsystem/images/loosservice.webp' %}" class="img-fluid rounded-4 shadow" style="width: 100%; height: 480px ; object-fit: cover;" alt="Weight Loss">
+      </div>
+      <div class="col-lg-6 mt-5">
+        <h3 class="fw-semibold text-warning">Why Our Program Works</h3>
+        <ul class="list-unstyled fs-5 text-light mt-3">
+          <li>✅ Customized low-calorie, balanced Halal meal plans</li>
+          <li>✅ Cardio and fat-burning routines for all fitness levels</li>
+          <li>✅ Weight loss guidance aligned with Sunnah practices</li>
+          <li>✅ Accountability support from certified trainers</li>
+          <li>✅ No crash diets — only smart, sustainable strategies</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Middle Content -->
+    <div class="row align-items-center mb-5 flex-lg-row-reverse">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img src="{% static 'Gymsystem/images/loosservice2.webp' %}" class="img-fluid rounded-4 shadow" alt="Trainer">
+      </div>
+      <div class="col-lg-6">
+        <h4 class="fw-semibold text-warning fs-1">Islamic Holistic Health Model</h4>
+        <p class="fs-5 text-light">
+          Our approach blends modern nutrition science with Islamic principles. With proper intention (niyyah), moderation, and consistent routines rooted in Sunnah, our clients transform physically and spiritually.
+        </p>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="mb-5 p-4 bg-white rounded-4 shadow">
+      <h4 class="text-success fw-bold mb-3">What Our Clients Say</h4>
+      <blockquote class="blockquote fs-5 text-muted">
+        "I lost 10 kg in 3 months and never felt like I was starving. The spiritual side of the journey made it even more rewarding!"
+      </blockquote>
+      <footer class="blockquote-footer text-end fw-bold text-dark mt-3">— Fatima K., Age 30</footer>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center">
+      <a href="{% url 'register' %}" class="btn btn-danger btn-lg px-5 py-3 shadow-sm">Join Weight Loss Program</a>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

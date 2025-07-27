@@ -1,0 +1,53 @@
+
+{% extends "Gymsystem/main.html" %}
+{% load static %}
+
+
+{% block title %}Contactpage{% endblock title %}
+
+{% block content %}
+
+<!-- Contact Us Section -->
+<section class="contact-section py-5 mb-5" style="background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: #fff; font-family: 'Poppins', sans-serif;">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="text-info fw-bold display-5">Contact Us</h2>
+      <p class="text-light fs-5">We’d love to hear from you. Fill out the form and we'll get back to you shortly.</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8">
+        <form class="p-4 p-md-5 bg-dark rounded-4 shadow-lg border border-secondary">
+          <div class="form-floating mb-4">
+            <input type="text" class="form-control bg-dark text-light border-0 shadow-sm contact-input" id="name" placeholder="Your Name" required>
+            <label for="name">Your Name</label>
+          </div>
+
+          <div class="form-floating mb-4">
+            <input type="email" class="form-control bg-dark text-light border-0 shadow-sm contact-input" id="email" placeholder="Your Email" required>
+            <label for="email">Email Address</label>
+          </div>
+
+          <div class="form-floating mb-4">
+            <input type="text" class="form-control bg-dark text-light border-0 shadow-sm contact-input" id="subject" placeholder="Subject">
+            <label for="subject">Subject</label>
+          </div>
+
+          <div class="form-floating mb-4">
+            <textarea class="form-control bg-dark text-light border-0 shadow-sm contact-input" placeholder="Your Message" id="message" style="height: 150px" required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+
+          <div class="d-grid mt-4">
+            <button type="submit" class="btn btn-info btn-danger btn-lg text-dark fw-semibold shadow-sm transition-all">
+              🚀 Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+{% endblock content %}

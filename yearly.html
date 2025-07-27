@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yearly Membership - UmmahFit</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body style="font-family: 'Poppins', sans-serif;">
+
+<section class="py-5" style="background: linear-gradient(to right, #141e30, #243b55);">
+  <div class="container bg-white rounded-5 shadow-lg p-5">
+
+    <!-- Header -->
+    <div class="text-center mb-5">
+      <h1 class="fw-bold text-danger display-5">Yearly Membership</h1>
+      <p class="fs-5 text-muted">Commit to your health and faith for a full year — the most rewarding and economical way to train with UmmahFit.</p>
+    </div>
+
+    <!-- Image -->
+    <div class="mb-5">
+      <img src="{% static 'Gymsystem/images/yearly.png' %}" alt="Yearly Membership" class="img-fluid w-40  rounded-4 shadow mx-auto d-block">
+    </div>
+
+    <!-- Benefits Grid -->
+    <div class="row g-5 mb-5 mt-5">
+      <div class="col-md-6">
+        <h3 class="text-success mb-3">Included in the Yearly Plan:</h3>
+        <ul class="fs-5 text-muted">
+          <li>365-day full access to all facilities</li>
+          <li>Quarterly fitness assessments</li>
+          <li>Exclusive seminars & Islamic wellness workshops</li>
+          <li>Priority booking for all classes</li>
+          <li>Year-round nutritional guidance</li>
+          <li>Personal trainer consultation every month</li>
+          <li>Special member-only fitness gifts</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h3 class="text-success mb-3">Ideal For:</h3>
+        <ul class="fs-5 text-muted">
+          <li>Dedicated fitness lovers</li>
+          <li>Those serious about transformation</li>
+          <li>Long-term commitment with cost savings</li>
+          <li>Families or couples joining together</li>
+        </ul>
+        <h3 class="text-primary mt-4">Price: <span class="text-danger fw-bold">Rs. 35,000 / Year</span></h3>
+        <p class="text-muted fs-6">(Save Rs. 7,000 compared to monthly plan!)</p>
+      </div>
+    </div>
+
+    <!-- Testimonial -->
+    <div class="bg-light p-4 rounded-4 mb-5 shadow-sm">
+      <blockquote class="blockquote text-muted fst-italic fs-5 mb-2">
+        "UmmahFit’s yearly membership gave me results, structure, and spiritual growth — all in one place."
+      </blockquote>
+      <figcaption class="blockquote-footer text-dark text-end">— Ahmad S., IT Professional</figcaption>
+    </div>
+
+    <!-- Special Bonus Section -->
+    <div class="bg-warning-subtle p-4 rounded-4 mb-5 border border-warning">
+      <h4 class="text-warning mb-3">Yearly Member Bonuses</h4>
+      <ul class="text-dark fs-5">
+        <li>Free Entry to Ramadan Wellness Bootcamp</li>
+        <li>Exclusive Islamic Lifestyle Journal (E-Book)</li>
+        <li>Access to Members-Only Support Group</li>
+      </ul>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center">
+      <a href="{% url 'register' %}" class="btn btn-primary btn-lg px-5 py-3 shadow">Join Yearly Membership</a>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+  {% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ebolt Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+
+    <script src="{% static 'Gymsystem/js/script.js' %}"></script>
+
+</head>
+<body class="bg-gradient-to-b from-sky-100 to-white min-h-screen flex items-center justify-center">
+
+  <div class="w-full max-w-md p-8 bg-white/50 backdrop-blur-lg rounded-2xl shadow-xl border border-gray-200">
+    <div class="flex justify-center mb-4">
+      <div class="bg-gray-200 rounded-full p-3">
+        <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
+             d="M5.121 17.804A10 10 0 1020.879 6.196M15 12h.01M9 12h.01M12 16h.01"/></svg>
+      </div>
+    </div>
+
+    <h2 class="text-center text-2xl font-bold text-gray-800">LogIn with email</h2>
+    <p class="text-center text-sm text-gray-500 mt-1 mb-6">Make a new journey to improve ummah power and participate in islam strength. For free</p>
+
+    <form class="space-y-4">
+      <div>
+        <label class="block mb-1 text-sm font-medium text-gray-700">Email</label>
+        <div class="relative">
+          <input type="email" required placeholder="you@example.com" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-400 focus:outline-none" />
+          
+        </div>
+      </div>
+
+      <div>
+        <label class="block mb-1 text-sm font-medium text-gray-700">Password</label>
+        <div class="relative">
+          <input id="password" type="password" required placeholder="••••••••" class="w-full px-4 py-2 pl-10 pr-10 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-400 focus:outline-none" />
+          <span class="absolute left-3 top-2.5 text-gray-400">🔒</span>
+          <button type="button" onclick="togglePassword()" class="absolute right-3 top-2.5 text-gray-500 text-lg" id="eyeIcon">👁️</button>
+        </div>
+        <div class="text-right mt-1">
+          <a href="#" class="text-sm text-blue-600 hover:underline">Forgot password?</a>
+        </div>
+      </div>
+
+      <button type="submit" class="w-full bg-black text-white py-2 rounded-md hover:bg-gray-900 transition">
+        Get Started
+      </button>
+    </form>
+
+    <div class="flex items-center my-6">
+      <hr class="flex-grow border-t border-gray-300">
+      <div class="text-center mt-3">
+  <span class="text-muted small">
+    Or if you are new! 
+    <a href="{% url 'signup' %}" 
+       class="fw-bold text-decoration-none text-success" 
+       style="font-size: 1rem;">
+       ➤ Create Account
+    </a>
+  </span>
+</div>
+
+
+      <hr class="flex-grow border-t border-gray-300">
+    </div>
+
+
+
+
+
+
+    {% comment %} <div class="flex justify-between space-x-3">
+      <button class="flex-1 bg-white border border-gray-300 rounded-md py-2 hover:shadow">
+        <img src="https://www.svgrepo.com/show/475656/google-color.svg" class="w-5 h-5 mx-auto" />
+      </button>
+      <button class="flex-1 bg-white border border-gray-300 rounded-md py-2 hover:shadow">
+        <img src="https://www.svgrepo.com/show/448234/facebook-color.svg" class="w-5 h-5 mx-auto" />
+      </button>
+      <button class="flex-1 bg-white border border-gray-300 rounded-md py-2 hover:shadow">
+        <img src="https://www.svgrepo.com/show/475768/apple.svg" class="w-5 h-5 mx-auto" />
+      </button>
+    </div>
+  </div> {% endcomment %}
+
+  <script src="script.js"></script>
+
+</body>
+</html>

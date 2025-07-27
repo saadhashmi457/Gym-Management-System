@@ -1,0 +1,73 @@
+{% extends "Gymsystem/main.html" %}
+{% load static %}
+
+{% block title %}Aboutpage{% endblock title %}
+
+{% block content %}
+
+
+<!-- ABOUT US SECTION WITH BACKGROUND IMAGE AND LEFT TEXT -->
+<section class="py-5 position-relative text-start text-white" style="background-image: url('{% static 'Gymsystem/images/a.jpg' %}'); background-size: cover; ">
+
+  <!-- Dark overlay -->
+  <div style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(0,0,0,0.6); z-index: 1;"></div>
+
+  <!-- Content -->
+  <div class=" col-md-6  text-md-start container position-relative" style="z-index: 2;">
+    <h1 class="text-warning display-3 fw-bold mb-4 mt-5">About UmmahFit</h1>
+
+    <p class="fs-5 mb-5 fs-2 ms-3 ">
+      Welcome to <strong>UmmahFit</strong> — where your journey to becoming a stronger,
+       more disciplined, and spiritually empowered individual begins.
+      Founded with a passion for uplifting the Ummah, UmmahFit goes beyond a regular gym experience.
+      It is a transformative environment where modern fitness meets Islamic values.
+    </p>
+
+    <hr class="my-5 text-light">
+
+    <h2 class="fw-semibold text-warning mt-5">Our Mission</h2>
+    <p class="fs-5 mb-5 fs-4">
+      Our mission is to develop physically strong, mentally tough, and spiritually conscious individuals in the Muslim community.
+      We believe that the body is an Amanah (trust) from Allah ﷻ, and it's our duty to take care of it.
+      At UmmahFit, we’re here to motivate, educate, and uplift you—so you can strive for excellence in both this life and the Hereafter.
+    </p>
+
+    <h2 class="fw-semibold text-warning mt-5">Meet Our Certified Trainers</h2>
+    <p class="fs-5 mb-5 fs-4">
+      Our trainers are not only fitness professionals but also mentors who understand your values.
+      They are certified in physical training, sports nutrition, and also receive training in Islamic ethics to provide a wholesome coaching experience.
+      From strength building to endurance, we cater to every goal with tailored fitness plans.
+    </p>
+
+    <h2 class="fw-semibold text-warning mt-5">State-of-the-Art Facilities</h2>
+    <p class="fs-5 mb-5 fs-4">
+      We offer a clean, spacious, and well-equipped facility with the latest in gym equipment, functional training areas, a women-only workout zone, prayer areas, and healthy refreshment bars.
+      All spaces are designed with Islamic etiquette and community comfort in mind.
+    </p>
+
+    <h2 class="fw-semibold text-warning mt-5">Faith Meets Fitness</h2>
+    <p class="fs-5 mb-5 fs-4">
+      We understand the importance of balancing your Deen with your Dunya.
+      That’s why our programs are aligned with the Sunnah lifestyle — including prophetic nutrition, Halal meal plans, and rest cycles based on Islamic principles.
+      Our aim is to make fitness an act of worship.
+    </p>
+
+    <h2 class="fw-semibold text-warning mt-5">Community & Brotherhood</h2>
+    <p class="fs-5 mb-5 fs-4">
+      UmmahFit is not just a gym; it's a community center for the youth and elders alike.
+      We host regular motivational talks, Quran and fitness workshops, Islamic goal-setting sessions, and charity fitness challenges.
+      We want every member to feel valued, empowered, and spiritually fulfilled.
+    </p>
+
+    <hr class="my-5 text-light">
+
+    <div class="text-start">
+      <a href="{% url 'contact' %}" class="btn btn-danger btn-lg">Join Our Family</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+{% endblock content %}

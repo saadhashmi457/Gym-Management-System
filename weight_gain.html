@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Gym Management System{% endblock %}</title>
+
+
+
+  <!--  Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!--  Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!--  Custom CSS -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  <!-- Optional: Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+  
+</head>
+<body>
+
+<!-- Weight Gain Service Page -->
+<section class="py-5" style="background: linear-gradient(135deg, #44021fff 0%, #07202aff 100%);">
+  <div class="container">
+
+    <!-- Header Section -->
+    <div class="text-center mb-5">
+      <h1 class="display-5 fw-bold text-warning">Weight Gain Program</h1>
+      <p class="fs-5 text-light">Gain healthy weight with personalized, halal, and effective guidance at UmmahFit.</p>
+      <hr class="w-25 mx-auto" style="border: 2px solid #beb6b7ff;">
+    </div>
+
+    <!-- Hero Row -->
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-12 mb-4 mb-lg-0">
+        <img src="{% static 'Gymsystem/images/abhishek-gupta-GbHQ7NGyDfQ-unsplash.jpg' %}" class="img-fluid rounded-4 shadow" style="width: 100%; height: 480px ; object-fit: cover;" alt="Weight Gain">
+      </div>
+      <div class="col-lg-6 mt-5">
+        <h3 class="fw-semibold text-warning">Why Our Program Works</h3>
+        <ul class="list-unstyled fs-5 text-light mt-3">
+          <li>✅ Custom high-calorie, Halal-friendly diet plans</li>
+          <li>✅ Muscle-building workouts without harmful shortcuts</li>
+          <li>✅ Sunnah-based eating and recovery guidance</li>
+          <li>✅ Specialized plans for hard gainers</li>
+          <li>✅ One-on-one mentorship with certified trainers</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Middle Content -->
+    <div class="row align-items-center mb-5 flex-lg-row-reverse">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img src="{% static 'Gymsystem/images/s2.avif' %}" class="img-fluid rounded-4 shadow" alt="Trainer">
+      </div>
+      <div class="col-lg-6">
+        <h4 class="fw-semibold text-warning fs-1">Faith-Based Fitness Approach</h4>
+        <p class="fs-5 text-light">
+          Your journey to a stronger body aligns with your values. We follow a holistic approach that integrates the wisdom of Islamic nutrition and modern fitness science. From meal timing to supplement choices, everything is Halal and value-driven.
+        </p>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="mb-5 p-4 bg-white rounded-4 shadow">
+      <h4 class="text-success fw-bold mb-3">What Our Clients Say</h4>
+      <blockquote class="blockquote fs-5 text-muted">
+        "After years of being underweight, I finally saw results with UmmahFit. The plan was easy to follow, and I felt confident knowing it was all halal."
+      </blockquote>
+      <footer class="blockquote-footer text-end fw-bold text-dark mt-3">— Saad I., Age 22</footer>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center">
+      <a href="{% url 'register' %}" class="btn btn-danger btn-lg px-5 py-3 shadow-sm">Join Weight Gain Program</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+</body>
+</html>
